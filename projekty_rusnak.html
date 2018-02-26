@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Jakub Rusnák - programátorské projekty</title>
+
+  <style type="text/css">
+    h1, h2, h3, p {
+      width: 840px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (max-width: 900px) {
+      h1, h2, h3, p {
+        width: 100%;
+      }
+    }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /*p { margin-bottom: 0.25cm; line-height: 120% }*/
+  </style>
+
+</head>
+<body lang="sk-SK">
+<h1>Jakub Rusnák &ndash; programátorské projekty</h1>
+<h2>Projekty pre AVG Technologies CZ s.r.o.</h2>
+<h3>MalsortVis</h3>
+<p>Nástroj na vizualizáciu vzoriek počítačových vírusov (PE EXE
+súbory) pomocou rovnobežných súradníc (parrallel coordinates). Graf
+je navrhnutý tak, aby sa zvýraznili skupiny s podobnými vlastnosťami
+vhodné na hromadnú detekciu. Tie sa dajú označiť a exportovať na
+ďalšie spracovanie. Program vie načítať veľké množstvo (rádovo
+stotisíce) vzoriek a zobraziť ich v reálnom čase v grafe.
+Naprogramované v C++ pomocou knižnice QT a OpenGL. Dáta o vzorkách sa
+ukladajú do lokálneho databázového súboru (SQLite).</p>
+<img src="malsortvis01.png" name="MalsortVis 1" width="1379" height="838"/>
+<img src="malsortvis02.png" name="MalsortVis 2" width="871" height="944"/>
+
+
+<h3>JumpGraph</h3>
+<p>3D vizualizácia skokov v spustiteľných súboroch systému Windows.
+Valec predstavuje jednu zvolenú sekciu v EXE súbore a čiary po jeho
+obvode jednotlivé programové skoky (procesorová inštrukcia JMP).
+Naprogramované v C++ pomocou knižnice QT a OpenGL. Volumetrické čiary
+sú kreslené pomocou vertex a fragment shaderu.</p>
+<img src="JumpGraph01.png" name="JumpGraph 1" width="1345" height="1144"/>
+<img src="JumpGraph02.png" name="JumpGraph 2" width="1026" height="1052"/>
+
+
+<h3>EntropyGraph</h3>
+<p>Vizualizácia entropie v spustiteľných súboroch systému Windows.
+Zobrazuje jednotlivé sekcie EXE súboru ako 2D graf, kde osa X sú dáta
+súboru a osa Y je entropia. Naprogramované v C++ pomocou knižnice QT
+a Cairo. Optimalizované aj na načítanie veľkých súborov a rýchle
+priblíženie na ľubovoľný úsek pomocou rôznych úrovní detailu.</p>
+<img src="EntropyGraph01.png" name="EntropyGraph 1" width="1103" height="955"/>
+
+<h3>ApkView</h3>
+<p>Prehliadač spustiteľných súborov APK systému Android. Program vie
+zobraziť rôzne zdroje v textovej reprezentácii (aj so zvýraznením
+syntaxe), hexadecimálnej reprezentácii alebo grafickej reprezentácii
+(napríklad vložené obrázky a ikony priamo zobrazí). Naprogramované v
+C++ pomocou knižnice QT a OpenSSL. Aby som pri implementácii nemusel
+&bdquo;znovu vymýšľať koleso&ldquo;, boli preskúmané, využité a
+upravené niektoré voľne dostupné zdrojové kódy (Open Source) systému
+Android.</p>
+<img src="ApkView01.png" name="ApkView 1" width="1067" height="841"/>
+
+<h3>Web oddelenia algoritmickej detekcie</h3>
+<p>Tvorba a udržiavanie stránky zobrazujúcej štatistiky a výsledky
+detekcie nášho oddelenia aj v grafickej forme. Využité boli rôzne
+interné nástroje, skriptovací jazyk Python a bežné www technológie
+(Html, CSS, Javascript). Na ukladanie dát o vzorkách sa využívala
+MySQL databáza. Na vykresľovanie 2D grafiky bola použitá knižnica
+Cairo a formát SVG.</p>
+<h3>Automatizácia triedenia vzoriek počítačových vírusov</h3>
+<p>Tvorba a udržiavanie automatických skriptov v jazyku Python na
+triedenie množstva vzoriek počítačových vírusov. Výsledky sme denne
+využívali pri tvorbe hromadných definícií na skupiny malware. Tie nám
+umožnili udržiavať čo najmenšiu veľkosť antivírusovej databáze.</p>
+
+<h2>Súkromné projekty</h2>
+<h3>Rozšírenie Tatry Card</h3>
+<p>Jednoduché rozšírenie do prehliadača Chrome, ktoré umožní
+automatické kopírovanie osobných údajov hostí z hotelového
+informačného systému do informačného systému na tvorbu vernostných
+kariet. Tvorili sme to spolu s partnerkou ako darček pre jej rodičov,
+ktorí vedú penzión v Tatrách. Ja som mal na starosti programovanie,
+partnerka dokumentáciu. Naprogramované v JavaScripte. <a href="http://www.miramonti.sk/tatrycard/TatryCard.html">Ďalšie
+informácie na tomto odkaze</a>.</p>
+</body>
+</html>
